@@ -1,0 +1,22 @@
+.footer {
+  background-color: $footerBlue;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: $footerBlue;
+  ul {
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      color: white;
+      margin-left: 25px;
+      margin-right: 25px;
+      font-size: 1.5em;
+    }
+  }
+}

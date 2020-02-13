@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Leckerli+One");
+
+section {
+  &.main-navigation {
+    background-color: $purple;
+    nav {
+      background-color: $purple;
+      .navbar-brand a {
+        font-size: 45px;
+        font-family: "Leckerli One";
+        font-weight: bold;
+        color: white;
+      }
+      .navbar-end {
+        .buttons {
+          a {
+            font-size: 1rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

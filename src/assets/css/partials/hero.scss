@@ -1,0 +1,31 @@
+section {
+  &.first {
+    .hero-body {
+      padding-bottom: 9rem;
+      .container {
+        width: 70%;
+        text-align: center;
+        @include touch {
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .title {
+          color: white;
+          text-transform: initial;
+          font-weight: normal;
+          margin-bottom: 3rem;
+        }
+        button {
+          font-size: 1rem;
+          font-weight: 500;
+          // padding: 2em 5em;
+          padding-left: 5em;
+          padding-right: 5em;
+          box-shadow: 0px 5px $darkOrange;
+          height: 3.5em;
+        }
+      }
+    }
+  }
+}

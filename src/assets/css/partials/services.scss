@@ -1,0 +1,76 @@
+section {
+  &.services {
+    .hero-body {
+      padding-bottom: 9rem;
+      .container:first-child {
+        max-width: 40%;
+        text-align: center;
+        margin-bottom: 5rem;
+        @include touch {
+          max-width: 100%;
+        }
+        .title {
+          color: white;
+          font-weight: normal;
+          position: relative;
+          letter-spacing: 3px;
+          &:after {
+            background-color: $darkTeal;
+            bottom: -15px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 90px;
+          }
+        }
+        .subtitle {
+          text-transform: initial;
+          margin-top: 3rem;
+          color: white;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    .container:nth-of-type(2) {
+      background-color: $purple;
+      width: 70%;
+      padding: 5rem 2rem 2rem 2rem;
+      @include touch {
+        padding: 2rem 2rem 2rem 2rem;
+        background-color: $teal;
+      }
+      .columns {
+        .column {
+          @include touch {
+            background-color: $purple;
+            margin-bottom: 4rem;
+          }
+          text-align: center;
+          img {
+            @include touch {
+              top: -50px;
+            }
+            position: relative;
+            top: -135px;
+          }
+          .title {
+            @include touch {
+              margin-top: -2rem;
+            }
+            margin-top: -120px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: white;
+          }
+
+          .description {
+            text-transform: initial;
+          }
+        }
+      }
+    }
+  }
+}

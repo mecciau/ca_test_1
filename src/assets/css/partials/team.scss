@@ -1,0 +1,68 @@
+section {
+  &.team {
+    .hero-body {
+      padding-bottom: 9rem;
+      .container:first-child {
+        max-width: 40%;
+        text-align: center;
+        margin-bottom: 5rem;
+        @include touch {
+          max-width: 100%;
+        }
+        .title {
+          color: $darkBlue;
+          font-weight: normal;
+          position: relative;
+          letter-spacing: 3px;
+
+          &:after {
+            background-color: #c8d9e5;
+            bottom: -15px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 90px;
+          }
+        }
+        .subtitle {
+          text-transform: initial;
+          margin-top: 3rem;
+          color: $darkBlue;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    .container:nth-of-type(2) {
+      background-color: $lightGrey;
+      width: 70%;
+      .columns {
+        .column {
+          text-align: center;
+          .social {
+            margin-top: 1em;
+          }
+          .img-circle {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+          }
+          .title {
+            color: $darkBlue;
+            font-size: 1.5rem;
+          }
+          .subtitle {
+            color: $lightBlue;
+            font-size: 1rem;
+          }
+          .description {
+            text-transform: initial;
+            color: $darkBlue;
+          }
+        }
+      }
+    }
+  }
+}

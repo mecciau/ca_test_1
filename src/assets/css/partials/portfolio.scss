@@ -1,0 +1,94 @@
+section {
+  &.portfolio {
+    .hero-body {
+      padding-bottom: 9rem;
+      .container:first-child {
+        max-width: 40%;
+        text-align: center;
+        margin-bottom: 5rem;
+        @include touch {
+          max-width: 100%;
+        }
+        .title {
+          color: $darkBlue;
+          font-weight: normal;
+          position: relative;
+          letter-spacing: 3px;
+          &:after {
+            background-color: $darkYellow;
+            bottom: -15px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 90px;
+          }
+        }
+        .subtitle {
+          text-transform: initial;
+          margin-top: 3rem;
+          color: $darkBlue;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    .container:nth-of-type(2) {
+      background-color: $yellow;
+      width: 70%;
+      text-align: center;
+      @include touch {
+        width: 100%;
+      }
+      button {
+        box-shadow: 0px 5px $darkTeal;
+        font-size: 1rem;
+        font-weight: 500;
+        padding-left: 5em;
+        padding-right: 5em;
+        height: 3.5em;
+        &:hover {
+          color: white;
+        }
+      }
+      .tabs {
+        margin-bottom: 2em;
+        li {
+          margin-right: 15px;
+          &.is-active {
+            a {
+              border: 0;
+              background: white;
+              &:hover {
+                border: 0;
+              }
+            }
+          }
+          a {
+            background: $darkYellow;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: $darkBlue;
+            &:hover {
+              border: 0;
+            }
+            @include touch {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .columns {
+        .column {
+          text-align: center;
+          margin: 0 auto;
+          h2 {
+            color: $darkBlue;
+          }
+        }
+      }
+    }
+  }
+}

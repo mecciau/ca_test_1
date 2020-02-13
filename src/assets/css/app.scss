@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import "../../../node_modules/bulma/bulma.sass";
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  font-family: "Roboto";
+}
+
+// Brand colors
+$purple: #864f9c;
+$darkPurple: #633979;
+$orange: #eb7c4b;
+$darkOrange: #c86a3f;
+$teal: #14c2a3;
+$darkTeal: #15a48b;
+$grey: #878787;
+$lightGrey: #e7f1f7;
+$lightBlue: #7acfed;
+$darkBlue: #3c4761;
+$yellow: #ffdd99;
+$darkYellow: #ebcc8d;
+$blue: #3c5398;
+$darkerBlue: #263970;
+$lBlue: #2fb9e7;
+$footerBlue: #324b8e;
+
+@import "./partials/navbar.scss";
+@import "./partials/hero.scss";
+@import "./partials/services.scss";
+@import "./partials/team.scss";
+@import "./partials/portfolio.scss";
+@import "./partials/contacts.scss";
+@import "./partials/footer.scss";
+
+.is-dark-purple {
+  background-color: $darkPurple;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+.is-purple {
+  background-color: $purple;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.is-orange {
+  background-color: $orange;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+.is-teal {
+  background-color: $teal;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.is-lightgrey {
+  background-color: $lightGrey;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.is-yellow {
+  background-color: $yellow;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+.is-blue {
+  background-color: $blue;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.is-lblue {
+  background-color: $lBlue;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
